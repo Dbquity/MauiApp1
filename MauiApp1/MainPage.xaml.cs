@@ -1,4 +1,5 @@
 ﻿namespace MauiApp1;
+using static MauiLib1.Class1;
 
 public partial class MainPage : ContentPage
 {
@@ -11,8 +12,8 @@ public partial class MainPage : ContentPage
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
-		CounterLabel.Text = $"Current count: {count}";
+		count = Shift(count);
+		CounterLabel.Text = $"Current count: {count}{Environment.NewLine} on {Seed}";
 
 		SemanticScreenReader.Announce(CounterLabel.Text);
 	}
