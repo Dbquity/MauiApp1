@@ -6,6 +6,6 @@ including a "pure" .NET 6 class library:
 ```
 MauiApp1 --> MauiLib1 --> ClassLibrary1
 ```
-Currently, late january 2022, the .NET 6 class library seems to prevent
+Currently, late January 2022, the .NET 6 class library seems to prevent
 publishing on Windows using ```dotnet publish``` as discussed in the comments
 of this issue: https://github.com/dotnet/maui/issues/4329.
