@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package
+	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+	<Identity Name="testcompany.Samples.MauiApp1" Version="0.1.0.0" Publisher="CN=testcompany ApS, O=testcompany ApS, C=Denmark" ProcessorArchitecture="x64" />
+	<Properties>
+		<DisplayName>testcompany.Samples.MauiApp1</DisplayName>
+		<PublisherDisplayName>testcompany ApS</PublisherDisplayName>
+		<Description>Sample MAUI app with .NET 6 lib for investigating publishing using the dotnet CLI</Description>
+		<Logo>Resources\appicon.svg</Logo>
+	</Properties>
+	<Resources>
+		<Resource Language="" />
+	</Resources>
+	<Dependencies>
+		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="" MaxVersionTested="" />
+	</Dependencies>
+	<Capabilities>
+		<rescap:Capability Name="runFullTrust"/>
+	</Capabilities>
+	<Applications>
+		<Application Id="MauiApp1" Executable="MauiApp1.exe" EntryPoint="Windows.FullTrustApplication">
+			<uap:VisualElements DisplayName="MAUI app 3" Description="Sample MAUI app with .NET 6 lib for investigating publishing" />
+		</Application>
+	</Applications>
+</Package>
